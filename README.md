@@ -10,8 +10,9 @@ This Solidity code represents an Event Organization contract that facilitates th
 
 4. `createEvent` function: This allows an account to create a new event with details such as name, date, price per ticket, and total tickets. It checks that the event is being organized in the future (date > current timestamp) and that there are enough tickets for sale. 
 
-5. `buyTicket` function: This allows accounts to buy certain tickets for an event. The transaction value must match the price times quantity, and not all tickets may be available if they have been sold out. 
+5. `buy ticket` function: This allows accounts to buy certain tickets for an event. The transaction value must match the price times quantity, and not all tickets may be available if they have been sold out. 
 
-6. `transfer ticket` function: This allows one account to transfer a certain quantity of their tickets to another account. It first checks that the sender has enough tickets and the event hasn't happened yet. If both conditions are met, it decreases the number of sender's tickets by the given amount and increases the recipient's ticket count.
+6. `transfer ticket` function: This allows one account to transfer a certain quantity of tickets to another. It first checks that the sender has enough tickets and the event hasn't happened yet. If both conditions are met, the number of sender's tickets will decrease by the given amount and the recipient's ticket count will increase.
 
-The contract uses the `require` function for input validation ensuring that only valid transactions can be processed. The use of `external` keyword in function declarations indicates that these functions can be called directly from outside this contract, making them "public".
+The contract uses the `require` function for input validation ensuring that only valid transactions can be processed. The use of the `external` keyword in function declarations indicates that these functions can be called directly from outside this contract, making them "public".
+ I used to calculate time according to blockchain{ block. timestamp } I used an epoch converter to convert the time for the blockchain  {https://www.epochconverter.com/}
