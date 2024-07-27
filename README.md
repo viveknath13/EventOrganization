@@ -15,4 +15,4 @@ This Solidity code represents an Event Organization contract that facilitates th
 6. `transfer ticket` function: This allows one account to transfer a certain quantity of tickets to another. It first checks that the sender has enough tickets and the event hasn't happened yet. If both conditions are met, the number of sender's tickets will decrease by the given amount and the recipient's ticket count will increase.
 
 The contract uses the `require` function for input validation ensuring that only valid transactions can be processed. The use of the `external` keyword in function declarations indicates that these functions can be called directly from outside this contract, making them "public".
- I used to calculate time according to blockchain{ block. timestamp } I used an epoch converter to convert the time for the blockchain  {https://www.epochconverter.com/}
+ I used to calculate time according to blockchain{ block. timestamp } I used an epoch converter to convert the time for the blockchain https://www.epochconverter.com
